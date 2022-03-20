@@ -29,5 +29,17 @@ namespace Generics
             if (thirdNumber.CompareTo(firstNumber) > 0 && thirdNumber.CompareTo(secondNumber) > 0)
                 Console.WriteLine(thirdNumber + ": Is the max float value.");
         }
+
+        public static void FindMax<T>(T firstValue, T secondValue, T thirdValue) where T : System.IComparable<T>
+        {
+            //// used compareto method
+            Console.WriteLine(); 
+            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
+                Console.WriteLine(firstValue + ": Is the max string value.");
+            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
+                Console.WriteLine(secondValue + ": Is the max string value.");
+            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
+                Console.WriteLine(thirdValue + ": Is the max string value.");
+        }
     }
 }
