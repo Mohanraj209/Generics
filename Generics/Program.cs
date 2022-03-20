@@ -11,6 +11,9 @@ namespace Generics
         public static void Main()
         {
             Console.WriteLine(" ---------** Test Maximum of Three Variables **--------- ");
+            Generics_Example.FindIntMax(3, 2, 1);
+            Console.ReadKey();
+
         }
     }
 }
