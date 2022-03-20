@@ -17,5 +17,17 @@ namespace Generics
             else
                 Console.WriteLine("max num is: " + num3);
         }
+
+        public static void GetMax(float firstNumber, float secondNumber, float thirdNumber)
+        {
+            //// used compareto method
+            Console.WriteLine();
+            if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
+                Console.WriteLine(firstNumber + ": Is the max float value .");
+            if (secondNumber.CompareTo(firstNumber) > 0 && secondNumber.CompareTo(thirdNumber) > 0)
+                Console.WriteLine(secondNumber + ": Is the max float value.");
+            if (thirdNumber.CompareTo(firstNumber) > 0 && thirdNumber.CompareTo(secondNumber) > 0)
+                Console.WriteLine(thirdNumber + ": Is the max float value.");
+        }
     }
 }
